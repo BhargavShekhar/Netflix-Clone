@@ -15,12 +15,12 @@ body{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw);
-    height: 67vh;
+    height: 97vh;       /*67*/
     position: relative;
 }
 
 .main .box{
-    height: 67vh;
+    height: 97vh;
     width: 100%;
     opacity: 0.70;
     background-color: black;
@@ -90,10 +90,11 @@ nav button{
 .btn{
     color: white;
     background-color: rgba(0, 0, 0, 0);
-    font-weight: bold;
+    font-weight: 550;
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 4px;
-    padding: 4px 8px;
+    padding: 4px 24px;
+    cursor: pointer;
 }
 
 .btn-red{
@@ -102,23 +103,32 @@ nav button{
     padding: 3px 24px;
     border-radius: 2px;
     border: none;
-/*     margin: 4px; */
+    /* margin: 4px;  */
 }
 
 .btn-red-sm{
     background-color: rgb(241, 10, 10);;
     border: none;
+    padding: 5px 15px;
+    margin: 18px;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 17px;
 }
 
 .main input{
-    font-size: 24px;
-    padding: 3px 24px;
+    font-size: 14px;
+    padding: 12px 154px 12px 12px;
     border-radius: 2px;
     border: none;
     color: white;
-    background-color: rgba(0, 0, 0, 0.295);
-    border: 1px solid rgba(255, 255, 255, 0.627);
-/*     margin: 4px; */
+    background-color: rgba(0, 0, 0, 0.066);
+    border: 1px solid rgba(255, 255, 255, 0.552);
+    /* margin: 4px; */
 }
 
 .first{
@@ -128,6 +138,7 @@ nav button{
     margin: auto;
     max-width: 70vw;
     color: white;
+    /* height: 97vh; */
 }
 
 .secImg img{
@@ -141,14 +152,18 @@ nav button{
     z-index: -1;
 }
 
-.secImg video{
+.secImg video {
+    max-width: 22vw;
+    position: absolute;
+    top: 72px;
+    right: 62px;
 }
 
-.secImg video {
-    max-width: 20vw;
+.thirdImg video{
+    max-width: 18vw;
     position: absolute;
-    top: 30px;
-    right: 80px;
+    top: 29px;
+    right: 94px;
 }
 
 section.first > div{
@@ -164,4 +179,67 @@ section.first > div :first-child{
 section.first > div :nth-child(2)
 {
     font-size: 28px;
+}
+
+.faq{
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faq h2{
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.faqbox{
+    display: flex;
+    color: white;
+    background-color: rgba(78, 75, 75, 0.759);
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px;
+    margin: 12px auto;
+    max-width: 70vw;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.faqbox span{
+    margin: 4px;
+}
+
+.faqbox:hover{
+    background-color: rgba(255, 255, 255, 0.404);
+}
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 14px;
+}
+
+footer .questions{
+    padding: 34px 0px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.footer a{
+    /* text-decoration:; */
+    color: white;
+    font-size: 14px;
 }
