@@ -102,7 +102,7 @@ nav button{
     padding: 3px 24px;
     border-radius: 2px;
     border: none;
-    margin: 4px;
+/*     margin: 4px; */
 }
 
 .btn-red-sm{
@@ -118,5 +118,50 @@ nav button{
     color: white;
     background-color: rgba(0, 0, 0, 0.295);
     border: 1px solid rgba(255, 255, 255, 0.627);
-    margin: 4px;
+/*     margin: 4px; */
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 70vw;
+    color: white;
+}
+
+.secImg img{
+    max-width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.secImg{
+    position: relative;
+    z-index: -1;
+}
+
+.secImg video{
+}
+
+.secImg video {
+    max-width: 20vw;
+    position: absolute;
+    top: 30px;
+    right: 80px;
+}
+
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+
+section.first > div :first-child{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+section.first > div :nth-child(2)
+{
+    font-size: 28px;
 }
