@@ -260,6 +260,7 @@ footer .questions{
 
     .first{
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .secImg img {
